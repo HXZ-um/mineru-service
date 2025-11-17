@@ -4,3 +4,4 @@ markdown
 pydantic
 python-multipart
 requests
+mineru

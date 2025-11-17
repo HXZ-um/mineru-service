@@ -14,7 +14,6 @@
 - 自动清理临时文件
 - 提供图片URL转Base64数据URL格式的专用接口
 - 高性能异步处理
-- Docker部署支持
 
 ## 目录结构
 
@@ -36,7 +35,7 @@
 
 - Python 3.8+
 - pip包管理器
-- MinerU工具已安装并可访问
+- MinerU工具已安装并可访问（[参考mineru部署教程](https://www.51cto.com/article/821228.html)）
 
 ### 安装依赖
 
