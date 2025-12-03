@@ -36,6 +36,21 @@
 - Python 3.8+
 - pip包管理器
 - MinerU工具已安装并可访问（[参考mineru部署教程](https://www.51cto.com/article/821228.html)）
+  (注：如果mineru.json中的模型文件路径包括了中文字符， 
+  如：C:\Users\用户\.cache\huggingface\hub\models--opendatalab--PDF-Extract-Kit-1.0\snapshots\<hash>
+  把这个 <hash> 目录下的models整体移动到D盘，并修改mineru.json)
+  ```json
+  "models-dir":
+  {
+  "pipeline": "D:/mineru_models/PDF-Extract-Kit-1.0",
+  "vlm": ""
+  }
+  ```
+  让 MinerU 走本地模型，在终端设置环境变量（Windows）：
+  ```bash
+  $env:MINERU_MODEL_SOURCE="local"
+  mineru -p your.pdf -o outdir
+  ```
 
 ### 安装依赖
 
